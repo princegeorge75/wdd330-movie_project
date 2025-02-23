@@ -3,20 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ndi'ndi Movies</title>
+  <title>Movie Search</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Movie Search</h1>
-    <input type="text" id="search-input" placeholder="Search for movies...">
+    <div class="header-container">   
+        <h1 class="site-name">Ndi'ndi Movies</h1>
+        <input type="text" id="search-input" placeholder="Search for movies...">
+        <div>
+          <button id="view-toggle-btn">Switch to List View</button>
+        </div>
+        <a href="watchlist.html">
+          <button id="my-watchlist-btn">My Watchlist</button>
+        </a>
+    </div> 
   </header>
-  
+
   <div id="movie-container" class="movie-container">
     <!-- Movie tiles will be displayed here -->
   </div>
-  
+
+  <!-- Movie Modal -->
+  <div id="movie-modal" class="modal">
+    <div class="modal-content">
+      <img id="modal-poster" src="" alt="Movie Poster">
+      <h2 id="modal-title">Movie Title</h2>
+      <p><strong>Release Year:</strong> <span id="modal-release-year"></span></p>
+      <p><strong>Overview:</strong> <span id="modal-overview"></span></p>
+      <button class="close-btn">X</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Ndi'ndi Movies | All Rights Reserved</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
