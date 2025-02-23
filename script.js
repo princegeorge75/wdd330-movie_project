@@ -1,4 +1,4 @@
-const API_KEY = "b084988e2b186094afcc32885678dcd2"; // Replace with your TMDb API key
+const API_KEY = "b084988e2b186094afcc32885678dcd2"; //TMDb API key
 const movieContainer = document.getElementById('movie-container');
 const searchInput = document.getElementById('search-input');
 const movieModal = document.getElementById('movie-modal');
